@@ -3,10 +3,15 @@ Demo
 
 
 python -m venv .venv
+
 source .venv/bin/activate
+
 python -m pip install --upgrade pip setuptools wheel
+
 python -m pip install django
+
 django-admin startproject web_project
+
 python manage.py migrate
 
 python manage.py startapp hello
